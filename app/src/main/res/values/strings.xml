@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Enfermera PAO</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Enfermera PAO</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- DECLARACIÓN DE ARREGLOS A UTILIZAR -->
+    <string-array name="presentacionesMgSobreMl">
+        <item>Presentación</item>
+        <item>500mg/5mL</item>
+        <item>1000mg/5mL</item>
+    </string-array>
+    <string-array name="presentacionesValores">
+        <item>0</item>
+        <item>100</item>
+        <item>200</item>
+    </string-array>
+    <string-array name="indicesNombres">
+        <item>Índice</item>
+        <item>Ampicilina</item>
+        <item>Ceftriaxona</item>
+    </string-array>
+    <string-array name="indicesValores">
+        <item>0</item>
+        <item>30</item>
+        <item>40</item>
+    </string-array>
+
+    <!-- FRAGMENT POLVOS -->
+    <string name="editTextNumberMgPedidos">mg a administrar</string>
+    <string name="editTextNumberPresentacion">Presentación</string>
+    <string name="editTextNumberIndiceDisol">Índice</string>
+    <string name="textViewMlMedicamento">mL de medicamento</string>
+    <string name="textViewMlSolucion">mL de solución</string>
+    <string name="buttonCalcular">Calcular</string>
+
+    <!-- FRAGMENT EDITARNOTA -->
+    <string name="editTextTituloNota">Título</string>
+    <string name="editTextContenido">Contenido</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_polvos">Polvos</string>
+    <string name="menu_notas">Mis notas</string>
+    <string name="menu_editarNota">Nota</string>
+    <string name="menu_checkList">Pendientes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

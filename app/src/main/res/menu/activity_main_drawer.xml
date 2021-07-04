@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!-- Fragments creados por defecto.
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+        -->
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/fragment_notas"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="@string/menu_notas" />
+        <item
+            android:id="@+id/fragmentCheckList"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="@string/menu_checkList" />
+        <item
+            android:enabled="false"
+            android:title="Cálculos" />
+        <item
+            android:id="@+id/fragment_polvos"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_polvos" />
+    </group>
+</menu>

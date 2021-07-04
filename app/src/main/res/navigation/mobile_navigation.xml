@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.enfermeria.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <!--Fragments creados por defecto
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.enfermeria.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.enfermeria.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    -->
+
+    <fragment
+        android:id="@+id/fragment_polvos"
+        android:name="com.example.enfermeria.FragmentPolvos"
+        android:label="@string/menu_polvos"
+        tools:layout="@layout/fragment_polvos" />
+
+    <fragment
+        android:id="@+id/fragment_notas"
+        android:name="com.example.enfermeria.FragmentNotas"
+        android:label="@string/menu_notas"
+        tools:layout="@layout/fragment_notas" >
+        <action
+            android:id="@+id/action_fragment_notas_to_fragment_editarNota"
+            app:destination="@id/fragment_editarNota" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_editarNota"
+        android:name="com.example.enfermeria.FragmentEditarNota"
+        android:label="@string/menu_editarNota"
+        tools:layout="@layout/fragment_editar_nota" >
+        <action
+            android:id="@+id/action_fragment_editarNota_to_fragment_notas"
+            app:destination="@id/fragment_notas" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCheckList"
+        android:name="com.example.enfermeria.FragmentCheckList"
+        android:label="@string/menu_checkList"
+        tools:layout="@layout/fragment_check_list" />
+</navigation>

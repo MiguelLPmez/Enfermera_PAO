@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentPolvos">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableRow android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:gravity="bottom|right"
+                android:text="Dosis: "
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextNumberMgPedidos"
+                style="@style/Widget.AppCompat.AutoCompleteTextView"
+                android:layout_width="93dp"
+                android:layout_height="84dp"
+                android:layout_column="1"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="bottom|center"
+                />
+
+            <TextView
+                android:id="@+id/textViewMg"
+                android:layout_width="68dp"
+                android:layout_height="match_parent"
+                android:gravity="bottom|left"
+                android:text="mg"
+                android:textSize="18sp" />
+
+        </TableRow>
+        <TableRow android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <Spinner
+                android:id="@+id/spinnerPresentacion"
+                android:layout_width="165dp"
+                android:layout_height="84dp"
+                android:gravity="bottom|right"
+                />
+
+            <EditText
+                android:id="@+id/editTextNumberPresentacion"
+                android:layout_width="95dp"
+                android:layout_height="84dp"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="bottom|center"
+                />
+
+            <TextView
+                android:id="@+id/textViewMgSobreMl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="mg/mL"
+                android:textSize="18sp"
+                android:gravity="bottom|left"/>
+        </TableRow>
+        <TableRow android:layout_margin="@dimen/activity_horizontal_margin">
+            <Spinner
+                android:id="@+id/spinnerIndiceDisol"
+                android:layout_width="match_parent"
+                android:layout_height="84dp" />
+
+            <EditText
+                android:id="@+id/editTextNumberIndiceDisol"
+                android:layout_width="92dp"
+                android:layout_height="84dp"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="bottom|center"
+                />
+
+            <TextView
+                android:id="@+id/textViewMgSobreMl2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="mg/mL"
+                android:textSize="18sp"
+                android:gravity="bottom|left"/>
+        </TableRow>
+        <LinearLayout android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:text="@string/buttonCalcular" />
+
+            <TextView
+                android:id="@+id/textViewMlMedicamento"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                android:background="#00BCD4"
+                android:gravity="center"
+                android:text="@string/textViewMlMedicamento"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewMlSolucion"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_margin="16dp"
+                android:background="#00BCD4"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:text="@string/textViewMlSolucion" />
+        </LinearLayout>
+    </TableLayout>
+</FrameLayout>
